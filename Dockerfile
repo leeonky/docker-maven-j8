@@ -7,3 +7,4 @@ RUN sudo apt-get update && sudo apt-get install -y \
 
 ADD settings.xml $USER_HOME/.m2/settings.xml
 	
+RUN sudo chown $USER_NAME:$USER_NAME $USER_HOME/.m2/ -R
